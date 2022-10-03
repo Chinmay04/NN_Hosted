@@ -125,8 +125,8 @@ def crop_prediction():
         K = int(request.form['pottasium'])
         ph = float(request.form['ph'])
         rainfall = float(request.form['rainfall'])
-        # state = request.form.get("stt")
-        # city = request.form.get("city")
+#         state = request.form.get("stt")
+        city = request.form.get("city")
 
         if weather_fetch(city) != None:
             temperature, humidity = weather_fetch(city)
